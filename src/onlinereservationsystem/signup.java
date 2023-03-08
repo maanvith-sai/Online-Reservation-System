@@ -42,45 +42,47 @@ public class signup extends javax.swing.JFrame{
         signupFrame.setLayout(null);
         
         titlelabel = new JLabel("Online Reservation System ");
-        titlelabel.setBounds(580,5,500,200);
+        titlelabel.setBounds(500,5,500,200);
         titlelabel.setForeground(Color.BLACK);
-        Font font1 = new Font("Serif", Font.BOLD, 80);
+        Font font1 = new Font("Serif", Font.BOLD, 40);
         titlelabel.setFont(font1);
         signupFrame.add(titlelabel);
         
         signuptext = new JLabel("SIGNUP");
-        signuptext.setBounds(680,150,400,200);
+        signuptext.setBounds(680,100,400,200);
         signuptext.setForeground(Color.BLACK);
-        Font font2 = new Font("Serif", Font.BOLD,100);
-        titlelabel.setFont(font2);
+        Font font2 = new Font("Serif", Font.BOLD,20);
+        signuptext.setFont(font2);
         signupFrame.add(signuptext);
         
        
         passwordtext = new JLabel("password");
-        passwordtext.setBounds(400,350,100,40);
+        passwordtext.setBounds(400,400,100,40);
         passwordtext.setForeground(Color.BLACK);
         Font font3 = new Font("Serif", Font.BOLD,20);
-        titlelabel.setFont(font3);
+        passwordtext.setFont(font3);
         signupFrame.add(passwordtext);
         
         usernametext = new JLabel("Username");
         usernametext.setBounds(400,300,100,40);
         usernametext.setForeground(Color.BLACK);
-        Font font4 = new Font("Serif", Font.BOLD,20);
-        titlelabel.setFont(font4);
+        Font font6 = new Font("Serif", Font.PLAIN,20);
+        usernametext.setFont(font3);
         signupFrame.add(usernametext);
         
         usernameinput = new JTextField();
         usernameinput.setBounds(550,300,300,40);
         usernameinput.requestFocus();
+        usernameinput.setFont(font6);
         signupFrame.add(usernameinput);
         
         passwordinput = new JPasswordField();
-        passwordinput.setBounds(550,350,300,40);
+        passwordinput.setBounds(550,400,300,40);
+        passwordinput.setFont(font6);
         signupFrame.add(passwordinput);
         
         registerbutton = new JButton("Register");
-        registerbutton.setBounds(550,400,140,40);
+        registerbutton.setBounds(550,500,140,40);
         signupFrame.add(registerbutton);
         
         registerbutton.addActionListener(new ActionListener(){
@@ -96,7 +98,7 @@ public class signup extends javax.swing.JFrame{
         });
         
         backbutton = new JButton("Back to Login");
-        backbutton.setBounds(700,400,150,40);
+        backbutton.setBounds(700,500,150,40);
         signupFrame.add(backbutton);
         
         backbutton.addActionListener(new ActionListener(){

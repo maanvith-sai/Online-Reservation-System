@@ -54,6 +54,7 @@ public class showticket extends javax.swing.JFrame{
         
         pnrInput = new JTextField();
         pnrInput.setBounds(550,300,300,40);
+        pnrInput.setFont(font3);
         pnrInput.requestFocus();
         bookFrame.add(pnrInput);
         

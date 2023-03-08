@@ -34,6 +34,7 @@ public class book extends javax.swing.JFrame {
         } catch (ClassNotFoundException | SQLException e) {
             System.out.println(e);
         }
+        Font font4 = new Font("Serif", Font.BOLD, 20);
         bookFrame = new JFrame("Online Reservation System - Ticket Booking by Maanvith");
         bookFrame.setSize(4000, 4000);
         bookFrame.setLayout(null);
@@ -54,15 +55,18 @@ public class book extends javax.swing.JFrame {
 
         firstNameInput = new JTextField();
         firstNameInput.setBounds(360, 210, 150, 40);
+        firstNameInput.setFont(font4);
         bookFrame.add(firstNameInput);
         firstNameInput.requestFocus();
 
         lastNameInput = new JTextField();
         lastNameInput.setBounds(750, 210, 150, 40);
+        lastNameInput.setFont(font4);
         bookFrame.add(lastNameInput);
 
         emailInput = new JTextField();
         emailInput.setBounds(360, 280, 640, 40);
+        emailInput.setFont(font4);
         bookFrame.add(emailInput);
 
         firstNameLabel = new JLabel("First Name :");
@@ -81,7 +85,6 @@ public class book extends javax.swing.JFrame {
         emailLabel = new JLabel("Email Id :");
         emailLabel.setBounds(150, 280, 200, 40);
         emailLabel.setForeground(Color.BLACK);
-        Font font4 = new Font("Serif", Font.BOLD, 20);
         emailLabel.setFont(font4);
         bookFrame.add(emailLabel);
 
@@ -93,6 +96,7 @@ public class book extends javax.swing.JFrame {
 
         trainNameInput = new JTextField();
         trainNameInput.setBounds(800, 560, 150, 40);
+        trainNameInput.setFont(font4);
         bookFrame.add(trainNameInput);
         trainNameInput.requestFocus();
 
@@ -105,6 +109,7 @@ public class book extends javax.swing.JFrame {
         
         trainNumberInput = new JTextField();
         trainNumberInput.setBounds(360, 560, 150, 40);
+        trainNumberInput.setFont(font4);
         bookFrame.add(trainNumberInput);
         trainNumberInput.requestFocus();
 
@@ -154,6 +159,7 @@ public class book extends javax.swing.JFrame {
 
         dateInput = new JTextField();
         dateInput.setBounds(360, 440, 100, 40);
+        dateInput.setFont(font4);
         bookFrame.add(dateInput);
 
         timeLabel = new JLabel("Time (HH:MM) 24HRS :");
@@ -165,6 +171,7 @@ public class book extends javax.swing.JFrame {
 
         timeInput = new JTextField();
         timeInput.setBounds(780, 440, 100, 40);
+        timeInput.setFont(font4);
         bookFrame.add(timeInput);
 
         submitButton = new JButton("Submit");

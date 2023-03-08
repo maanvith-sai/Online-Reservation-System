@@ -55,7 +55,8 @@ public class cancel extends javax.swing.JFrame {
         cancelFrame.add(enterPnrText);
         
         pnrInput = new JTextField(); 
-        pnrInput.setBounds(550, 300, 300, 40); 
+        pnrInput.setBounds(550, 300, 300, 40);
+        pnrInput.setFont(font3);
         pnrInput.requestFocus(); 
         cancelFrame.add(pnrInput);
         

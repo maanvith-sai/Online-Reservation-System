@@ -61,7 +61,7 @@ public class login extends javax.swing.JFrame{
         loginFrame.add(usernametext);
         
         passwordtext = new JLabel("Password");
-        passwordtext.setBounds(400,350,100,40);
+        passwordtext.setBounds(400,400,100,40);
         passwordtext.setForeground(Color.BLACK);
         Font font4 = new Font("Serif", Font.BOLD, 20);
         passwordtext.setFont(font4);
@@ -70,10 +70,12 @@ public class login extends javax.swing.JFrame{
         usernameinput = new JTextField();
         usernameinput.setBounds(550,300,300,40);
         usernameinput.requestFocus();
+        usernameinput.setFont(font4);
         loginFrame.add(usernameinput);
         
         passwordinput = new JPasswordField();
-        passwordinput.setBounds(550,350,300,40);
+        passwordinput.setBounds(550,400,300,40);
+        passwordinput.setFont(font4);
         passwordinput.requestFocus();
         loginFrame.add(passwordinput);
         
